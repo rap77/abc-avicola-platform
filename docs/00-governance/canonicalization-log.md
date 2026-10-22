@@ -2,8 +2,10 @@
 id: GOU-LOG-001
 title: Registro de Canonicalización
 version: 0.1.0
-status: PROPOSED
+status: APPROVED
 date: 2026-10-22
+last_reviewed_at: 2026-10-23
+approved_at: 2026-10-23
 author: Qwen3.7
 tags: [governance, canonicalization, log]
 ---
@@ -146,4 +148,30 @@ revisión humana; NO genera bump de versión — la versión sigue siendo 0.2.0)
   contenido sustantivo aprobado.
 - aprobación humana: SÍ
 - notas: la aprobación de este índice NO autoriza implementación, instalación de
+  dependencias, acceso a datos reales ni despliegues (AGENTS@0.2.0 §6, AJUSTE B).
+
+### Aprobación humana — canonicalization-log@0.1.0 (GOU-LOG-001) — 2026-10-23
+- documento: GOU-LOG-001 (este Registro de Canonicalización), v0.1.0
+- ruta: docs/00-governance/canonicalization-log.md
+- resultado de revisión: APPROVED (aprobación humana explícita del stakeholder)
+- aprobador: ABC Avícola Platform Owner
+- fecha de aprobación: 2026-10-23 (approved_at y last_reviewed_at llenados en frontmatter)
+- referencia de aprobación: mensaje del stakeholder "Apruebo explícitamente el
+  canonicalization-log.md actual para materializarlo como APPROVED"
+- cambio de estado: PROPOSED → APPROVED (ejecutado por el agente POR ORDEN EXPLÍCITA HUMANA;
+  no es autoaprobación)
+- ajustes aplicados (sin bump de versión, mismo contenido sustantivo):
+  * status: PROPOSED → APPROVED
+  * añadidos last_reviewed_at: 2026-10-23 y approved_at: 2026-10-23
+  * conservado el frontmatter heredado no canónico (id/date/author/tags): la orden solo
+    exigía cambiar status y llenar fechas; la migración al esquema canónico sigue pendiente
+    de autorización explícita (se mantiene en "Pendientes")
+- hash SHA-256 final (APPROVED): registrado en CANONICAL_INDEX.md y en la entrega de
+  materialización (limitación de auto-referencia: el hash no puede escribirse dentro del
+  propio archivo sin invalidarse; el valor canónico queda consignado en la tabla interna
+  del índice y en esta entrada se describe su procedencia)
+- actualización coordinada: docs/CANONICAL_INDEX.md actualiza la fila de este documento
+  de PROPOSED a APPROVED (cambio derivado directamente de la orden, punto 5)
+- aprobación humana: SÍ
+- notas: la aprobación de este log NO autoriza implementación, instalación de
   dependencias, acceso a datos reales ni despliegues (AGENTS@0.2.0 §6, AJUSTE B).
