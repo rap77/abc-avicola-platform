@@ -115,3 +115,35 @@ revisión humana; NO genera bump de versión — la versión sigue siendo 0.2.0)
 - notas: la aprobación de este documento NO autoriza implementación, instalación de
   dependencias, acceso a datos reales ni despliegues (AGENTS.md §6, AJUSTE B). Estado de
   entrega de las funcionalidades descritas: NOT_STARTED.
+
+### Materialización — CANONICAL_INDEX@0.1.0 (PROPOSED) — 2026-10-23
+- documento: CANONICAL_INDEX
+- ruta: docs/CANONICAL_INDEX.md
+- estado documental: PROPOSED (creado por orden explícita del stakeholder; commit cb62b17)
+- hash SHA-256 (PROPOSED): e4a7090040edf0c4a430f4c72a041eeb438ea5d9f4af42d69cf646b8c285c42e
+- fuente: "creación autorizada en la orden de aprobación de AGENTS@0.2.0"
+- aprobación humana: pendiente en ese momento
+
+### Aprobación humana — CANONICAL_INDEX@0.1.0 — 2026-10-23
+- documento: CANONICAL_INDEX (document_id canónico, v0.1.0)
+- ruta: docs/CANONICAL_INDEX.md
+- resultado de revisión: APPROVED (aprobación humana explícita del stakeholder)
+- aprobador: ABC Avícola Platform Owner
+- fecha de aprobación: 2026-10-23 (approved_at y last_reviewed_at llenados en frontmatter)
+- referencia de aprobación: mensaje del stakeholder "Apruebo explícitamente
+  CANONICAL_INDEX@0.1.0 con SHA-256 e4a70900... para materializarlo como APPROVED"
+  (el hash citado coincide con el archivo PROPOSED verificado: e4a7090040edf0c4...85c42e)
+- cambio de estado: PROPOSED → APPROVED (ejecutado por el agente POR ORDEN EXPLÍCITA HUMANA;
+  no es autoaprobación)
+- ajustes menores derivados de la materialización (mismo contenido sustantivo, sin bump):
+  * tabla interna docs/**: fila de este índice actualizada de PROPOSED a APPROVED y nota de
+    auto-referencia de hash reformulada (ver abajo);
+  * nota "única aprobación registrada" ampliada para incluir esta segunda aprobación.
+- hash SHA-256 final (APPROVED): f8554e0da614f71466183bc316af825a3745fb170ef6b89d49c1dfc7e1127965
+- limitación técnica de auto-referencia: el hash APPROVED no puede escribirse dentro del
+  propio archivo sin invalidarse; el valor canónico de referencia queda registrado en esta
+  entrada del log. El hash PROPOSED aprobado por el stakeholder (e4a70900...) corresponde al
+  contenido sustantivo aprobado.
+- aprobación humana: SÍ
+- notas: la aprobación de este índice NO autoriza implementación, instalación de
+  dependencias, acceso a datos reales ni despliegues (AGENTS@0.2.0 §6, AJUSTE B).

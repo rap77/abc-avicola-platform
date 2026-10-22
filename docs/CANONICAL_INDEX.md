@@ -2,14 +2,14 @@
 document_id: CANONICAL_INDEX
 title: Índice de Documentación Canónica - ABC Avícola Platform
 version: 0.1.0
-status: PROPOSED
+status: APPROVED
 authority: NORMATIVE
 document_owner:
   - ABC Avícola Platform Owner
 language: es
 created_at: 2026-10-23
-last_reviewed_at: null
-approved_at: null
+last_reviewed_at: 2026-10-23
+approved_at: 2026-10-23
 supersedes: []
 superseded_by: []
 source_documents:
@@ -46,15 +46,16 @@ CONTEXTO (no normativa, AGENTS.md@0.2.0 §2 punto 4) y por tanto NO figuran en e
 | ID | Título | Versión | Estado | Ruta | SHA-256 |
 |---|---|---|---|---|---|
 | GOU-LOG-001 | Registro de Canonicalización | 0.1.0 | PROPOSED | docs/00-governance/canonicalization-log.md | ver nota abajo |
-| CANONICAL_INDEX | Índice de Documentación Canónica (este documento) | 0.1.0 | PROPOSED | docs/CANONICAL_INDEX.md | auto-referencia (hash calculado post-creación; se registra en canonicalization-log) |
+| CANONICAL_INDEX | Índice de Documentación Canónica (este documento) | 0.1.0 | APPROVED | docs/CANONICAL_INDEX.md | ver canonicalization-log "Aprobación humana — CANONICAL_INDEX@0.1.0" (el hash final APPROVED no puede incluirse auto-referencialmente en este mismo archivo; queda registrado en el log) |
 
 Notas:
 - El Registro de Canonicalización conserva frontmatter no canónico heredado
   (id/date/author/tags); su migración al esquema canónico queda pendiente de
   autorización humana explícita (AGENTS.md@0.2.0 §6: no modificar documentos sin orden).
-- Ningún agente puede cambiar estados a APPROVED por iniciativa propia. La única
-  aprobación registrada hasta hoy es AGENTS@0.2.0 (aprobador: ABC Avícola Platform
-  Owner, 2026-10-23, referencia: canonicalization-log "Aprobación humana — AGENTS@0.2.0").
+- Ningún agente puede cambiar estados a APPROVED por iniciativa propia. Aprobaciones
+  registradas: AGENTS@0.2.0 y CANONICAL_INDEX@0.1.0 (aprobador en ambos casos: ABC Avícola
+  Platform Owner, 2026-10-23; referencias: canonicalization-log "Aprobación humana —
+  AGENTS@0.2.0" y "Aprobación humana — CANONICAL_INDEX@0.1.0").
 
 ## Pendientes de este índice
 - Migrar GOU-LOG-001 a frontmatter canónico cuando el stakeholder lo autorice.
